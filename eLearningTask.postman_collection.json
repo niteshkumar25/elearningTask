@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "536556ef-b21f-41d8-ad74-376d7b933d2e",
+		"name": "eLearningTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20223174"
+	},
+	"item": [
+		{
+			"name": "getCustomerDetail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"hillrachel\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/getCustomerDetail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getCustomerDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTransactionsDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account_id\":\"228290\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/getTransactionsDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getTransactionsDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
