@@ -87,7 +87,7 @@ let obj = {
           $project: {
             _id: 0,
             name: 1,
-            birthdate: 1,
+            birthdate: { $dateToString: { format: "%Y-%m-%d", date: "$birthdate" }},
             email: 1,
             accounts: {
               $map: {
